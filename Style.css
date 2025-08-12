@@ -1,0 +1,198 @@
+.hero {
+  background-image: url(./Images/Bckground\ image.png);
+  background-size: cover; 
+  background-position: center;
+  height: 30vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Aladin', cursive;
+  background-color: #f4f4f4;
+  background-size: 400% 400%;
+}
+  
+.navbar {
+  background-color: #0a1a2f;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.nav-links li a:hover {
+  background-color: #545166;
+  border-radius: 5px;
+}
+.About-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 40px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #111; 
+}
+
+.About-section h2 {
+  font-size: 2.5rem;
+}
+
+.submit-box h1 {
+  font-size: 2.5rem;
+  color: #1a3d5d;
+  text-align: center;
+}
+
+.submit-box p {
+  font-size: 2rem;
+  color: #233d56;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+form input, form textarea {
+  padding: 12px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+form button {
+  padding: 19px;
+  background-color: #1a3d5d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #496272;
+}
+
+.back-button {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards-grid {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 20px;
+}
+
+.life-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(15, 20, 30, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.life-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(15, 20, 30, 0.15);
+}
+
+.life-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 22px;
+}
+
+.card-content h2 {
+  font-family: 'Aladin', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0a1a2f;
+}
+
+.story {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.fun-fact {
+  background: #fff0f6;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #5a2c4a;
+  font-size: 0.95rem;
+}
+
+.fun-fact::before {
+  content: "💡 ";
+  font-size: 1.1em;
+}
+.tagline {
+  font-style: italic;
+  color: #651949;
+  text-align: right;
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+.explore-section {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #340c50;
+  font-weight: bold;
+  padding: 10px 0;
+  border-top: 2px solid #f0d9ff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 420px) {
+  .life-card img { height: 200px; }
+  .card-content { padding: 18px; }
+  .card-content h2 { font-size: 1.4rem; }
+}
